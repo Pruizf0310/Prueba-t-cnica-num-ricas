@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <title>Mi página web</title>
+
+    <style>
+      .hero {
+        background-image: url(./img/man-using-laptop-while-relaxing-beach-chair-beach.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 80px 0;
+        height: 90vh;
+      }
+      .body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #f8f9fa !important;
+            background-color: #25d295;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2beccc;
+            transition: background-color 0.3s ease;
+        }
+        .footer-icons a:hover {
+            color: #2beccc;
+            transition: color 0.3s ease;
+        }
+        .portfolio-img:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        .contact-section {
+          background-image: url("img/open-book-laptop-sand.jpg"); /* Reemplaza con la URL de tu imagen de fondo */
+          background-size: cover;
+          background-position: center;
+          color: #ffffff;
+        }
+        /* Asegurar que el contenido esté por encima de la capa de fondo */
+        .contact-section .container {
+          position: relative;
+          z-index: 2;
+        }
+
+    </style>
+    <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <img src="./img/MindUp.png" alt="">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Explorer</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar-->
+<!-- Hero -->
+<div class="hero text-center">
+  <h1 class="display-4 fw-bold">Mind Up</h1>
+  <h2 class="display-6 fw-bold">E-Learning</h2>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Transform the way you learn with flexible, high-quality courses anytime, anywhere.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3">Get Started</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
+    </div>
+  </div>
+</div>
+<!-- Hero -->
+<!-- Sección de servicios -->
+<div class="container mb-100">
+  <div class="row mb-3 text-center">
+    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+      <div class="card p-3">
+        <img src="./img/WD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Web Development Introduction Course</h5>
+          <p class="card-text">Learn the basics of web development, including HTML, CSS, and JavaScript. This course is designed for beginners and will take you from the basics to creating your own website.</p>
+          <p><strong>Price: $49.99</strong></p>
+          <a href="#" class="btn btn-dark">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+      <div class="card p-3">
+        <img src="./img/GD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Graphic Design with Adobe Photoshop Course</h5>
+          <p class="card-text">Master the essential tools in Adobe Photoshop to create stunning graphic designs. Learn everything from logo creation to image editing and visual content creation.</p>
+          <p><strong>Price: $69.99</strong></p>
+          <a href="#" class="btn btn-dark">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+      <div class="card p-3">
+        <img src="./img/DM.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing for Beginners Course</h5>
+          <p class="card-text">Introduction to digital marketing, where you will learn the key strategies of SEO, social media advertising, and content marketing. Perfect for entrepreneurs and professionals looking to improve their online presence.</p>
+          <a href="#" class="btn btn-dark">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin de la sección de servicios -->
+<!-- Sección de Portfolio -->
+<div class="container py-5">
+  <h2 class="text-center mb-4">Portfolio</h2>
+  <div class="row">
+    <!-- Galería de imágenes -->
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <img src="./img/WD1.png" class="img-fluid portfolio-img" alt="Portfolio Image 1" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <img src="./img/WD2.png" class="img-fluid portfolio-img" alt="Portfolio Image 2" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <img src="./img/GD1.png" class="img-fluid portfolio-img" alt="Portfolio Image 3" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <img src="./img/GD2.png" class="img-fluid portfolio-img" alt="Portfolio Image 4" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <img src="./img/DM1.png" class="img-fluid portfolio-img" alt="Portfolio Image 5" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <img src="./img/DM2.png" class="img-fluid portfolio-img" alt="Portfolio Image 6" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+    </div>
+  </div>
+</div>
+<!-- Modales para cada imagen -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModalLabel1">Portfolio Image 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/600" class="img-fluid" alt="Portfolio Image 1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Repite el modal para cada imagen cambiando el id y el contenido -->
+<div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModalLabel2">Portfolio Image 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/600" class="img-fluid" alt="Portfolio Image 2">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Repite los modales para las imágenes 3 a 6 con sus respectivos ids -->
+<!--Sección de portafolio-->
+<!--Sección de contacto--->
+<!-- Sección de contacto con fondo de imagen -->
+<div class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center text-white mb-4">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <form>
+          <!-- Campo de Nombre -->
+          <div class="mb-3">
+            <label for="name" class="form-label text-white">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre" required>
+          </div>
+
+          <!-- Campo de Correo Electrónico -->
+          <div class="mb-3">
+            <label for="email" class="form-label text-white">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+            <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+          </div>
+
+          <!-- Campo de Mensaje -->
+          <div class="mb-3">
+            <label for="message" class="form-label text-white">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <!-- Casilla de Verificación de Términos y Condiciones -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label text-white" for="terms">Acepto los términos y condiciones</label>
+          </div>
+          <!-- Botón de Envío -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Sección de contacto--->
+<!--Footer-->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex mb-0">
+        <li class="ms-3">
+          <a href="#" class="text-white">
+            <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a href="#" class="text-white">
+            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a href="#" class="text-white">
+            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!--Footer-->
+    <!-- Bootstrap Bundle with Popper -->
+     <!-- Vincula los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Inicialización de los tooltips -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
